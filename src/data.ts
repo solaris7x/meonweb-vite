@@ -1,21 +1,19 @@
 import { FooterProps } from "./components/Layout/Footer";
 import { AboutProps } from "./components/Home/About";
-import { ContactMeProps } from "./components/Home/ContactMe";
-import { HomeHeadersProps } from "./components/Home/HomeHeaders";
-import { NavBarDataProps } from "./components/Home/NavBar";
-import { QualificationsProps } from "./components/Home/Qualifications";
-import { SkillsProps } from "./components/Home/Skills";
-import { SplashProps } from "./components/Home/Splash";
+import { ContactMeProps } from "./components/Home/ContactMe"
+import { NavBarDataProps } from "./components/Home/NavBar"
+import { QualificationsProps } from "./components/Home/Qualifications"
+import { SkillsProps } from "./components/Home/Skills"
+import { SplashProps } from "./components/Home/Splash"
 
 export interface profileDataProps {
-  splash: SplashProps;
-  about: AboutProps;
-  skills: SkillsProps;
-  qualifications: QualificationsProps;
-  contactMe: ContactMeProps;
-  navBar: NavBarDataProps;
-  footer: FooterProps;
-  homeHeaders: HomeHeadersProps;
+  splash: SplashProps
+  about: AboutProps
+  skills: SkillsProps
+  qualifications: QualificationsProps
+  contactMe: ContactMeProps
+  navBar: NavBarDataProps
+  footer: FooterProps
 }
 
 export const profileData: profileDataProps = {
@@ -270,8 +268,4 @@ export const profileData: profileDataProps = {
       },
     ],
   },
-  homeHeaders: {
-    title: "Aditya Patil",
-    description: "Aditya is Web Developer and Cloud-Native enthusiast",
-  },
-};
+}

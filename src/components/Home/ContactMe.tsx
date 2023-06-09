@@ -1,13 +1,13 @@
 import { Icon } from "@iconify/react";
-import ContactForm from "./ContactMe/ContactForm";
+import EarthCanvas from "./ContactMe/EarthCanvas"
 
 export interface ContactMeProps {
   items: {
-    icon: string;
-    title: string;
-    subtitle: string;
-    link?: string;
-  }[];
+    icon: string
+    title: string
+    subtitle: string
+    link?: string
+  }[]
 }
 
 const ContactMe = (props: ContactMeProps) => {
@@ -18,7 +18,7 @@ const ContactMe = (props: ContactMeProps) => {
         Want to connect? My inbox is always open!
       </div>
       <div className="my-12 flex flex-col md:flex-row">
-        <div className="md:basis-1/3">
+        <div className="md:basis-1/3 flex flex-col justify-center">
           {props.items.map((item, index) => (
             // Item
             <a key={index} href={item.link || "#"}>
@@ -32,11 +32,12 @@ const ContactMe = (props: ContactMeProps) => {
             </a>
           ))}
         </div>
-        <div className="md:basis-2/3 mx-2">
-          <ContactForm />
+        <div className="md:basis-2/3 mx-2 aspect-square">
+          {/* <ContactForm /> */}
+          <EarthCanvas />
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 export default ContactMe;
